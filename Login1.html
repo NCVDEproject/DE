@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hygiene Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff5d5d;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .login-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .login-options div {
+            background-color: #fff;
+            padding: 20px;
+            width: 30%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-options div:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hygiene-score {
+            margin-top: 40px;
+        }
+        .feedback-section {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Hygiene Management Platform</h1>
+    </header>
+    <div class="container">
+        <section class="login-options">
+            <div>
+                <h2>Admin Login</h2>
+                <p>Manage the platform and oversee all vendors and customers.</p>
+                <button>Login as Admin</button>
+                <a href="admin.html">Dashboard</a>
+            </div>
+            <div>
+                <h2>Vendor Login</h2>
+                <p>View hygiene scores, manage profile, and respond to customer feedback.</p>
+                <button>Login as Vendor</button>
+                <a href="vendor.html">Dashboard</a>
+            </div>
+            <div>
+                <h2>Customer Login</h2>
+                <p>Give feedback on vendor hygiene and see hygiene scores.</p>
+                <button onlick "Logine as Customer()">Login as Customer</button>
+                <a href="customer.html">Customers</a>
+            </div>
+        </section>
+        <section class="hygiene-score">
+            <h2>Vendor Hygiene Scores</h2>
+            <p>See the hygiene ratings given by customers to vendors.</p>
+            <div>
+                <!-- Placeholder for dynamic hygiene score data -->
+            </div>
+        </section>
+        <section class="feedback-section">
+            <h2>Customer Feedback</h2>
+            <p>Rate the hygiene of your food vendor.</p>
+            <textarea placeholder="Leave your feedback..."></textarea>
+            <button>Submit Feedback</button>
+        </section>
+    </div>
+</body>
+</html>
